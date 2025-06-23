@@ -17,6 +17,7 @@ Geplante Erweiterungen beinhalten automatische UUID-Erkennung und interaktive Ge
 ### `mountman.sh` – Version 0.6
 
 **EN:** Mounts the Kingston Onyx drive using its known UUID.
+
 **DE:** Mountet den Kingston-Onyx-Stick anhand seiner bekannten UUID.
 
 #### Planned Features / Geplante Funktionen:
@@ -31,6 +32,7 @@ Geplante Erweiterungen beinhalten automatische UUID-Erkennung und interaktive Ge
 ### `umountman.sh` – Version 0.6
 
 **EN:** Unmounts the Kingston Onyx device cleanly.
+
 **DE:** Hängt den Kingston-Onyx-Stick sauber aus.
 
 #### Planned Features / Geplante Funktionen:
@@ -93,5 +95,6 @@ Alle Namen werden informell und mit ironischem Unterton verwendet.
 ---
 
 This is my first serious Bash-Repo. Enhancements, pull requests or feedback are always welcome.
+
 Dies ist mein erstes ernst gemeintes Bash-Repo. Verbesserungen, Pull Requests oder Feedback sind jederzeit willkommen.
 
