@@ -10,8 +10,10 @@ if [[ "$1" == "--version" ]];then
     exit 0
 fi
 
+DEST="/run/media/$USER/Kingston"
+
 # Try to unmount Kingston
-if sudo umount /media/Kingston; then
+if sudo umount $DEST; then
     echo "Kingston successfully unmounted."
 else
     echo "Error: Kingston could not be unmounted."

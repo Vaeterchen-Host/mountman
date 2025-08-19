@@ -14,10 +14,14 @@ Geplante Erweiterungen beinhalten automatische UUID-Erkennung und interaktive Ge
 
 ## Scripts
 
+### `mountman.sh` – Version 0.7
+
+**EN:** Makes a new (temporary) mountpoint und /run/media/user/*.
+**DE:** Erstellt einen temporären Mountpoint unter /run/media/user/*.
+
 ### `mountman.sh` – Version 0.6
 
 **EN:** Mounts the Kingston Onyx drive using its known UUID.
-
 **DE:** Mountet den Kingston-Onyx-Stick anhand seiner bekannten UUID.
 
 #### Planned Features / Geplante Funktionen:
@@ -26,13 +30,13 @@ Geplante Erweiterungen beinhalten automatische UUID-Erkennung und interaktive Ge
 * Menu-based device selection
 * Device verification before mounting
 * Check if device is already mounted
+* Check if mountdirectory already exists
 
 ---
 
 ### `umountman.sh` – Version 0.6
 
 **EN:** Unmounts the Kingston Onyx device cleanly.
-
 **DE:** Hängt den Kingston-Onyx-Stick sauber aus.
 
 #### Planned Features / Geplante Funktionen:
@@ -41,6 +45,7 @@ Geplante Erweiterungen beinhalten automatische UUID-Erkennung und interaktive Ge
 * Detailed error handling
 * UUID-based unmounting for generic use
 * Prüfung ob das Gerät bereits gemountet wurde
+* Prüfung ob Mountverzeichnis bereits angelegt wurde
 
 ---
 
@@ -71,7 +76,7 @@ MIT License – see [LICENSE](./LICENSE) file.
 
 ## Requirements / Voraussetzungen
 
-* Linux OS with `bash`, `mount`, `umount`, `systemctl`
+* Linux OS with `bash`, `mount`, `umount`, `systemctl` `mkdir`
 * Root permissions for device access (uses `sudo`)
 * UUID path configured for the target device (`/dev/disk/by-uuid/...`)
 
@@ -80,7 +85,8 @@ MIT License – see [LICENSE](./LICENSE) file.
 ## Tested With / Getestet mit
 
 * Kingston Onyx 256GB (formatted with FAT32)
-* Fedora Linux 42 (KDE Plasma Desktop)
+* Endeavour OS (KDE Plasma Desktop) (v0.7)
+* Fedora Linux 42 (KDE Plasma Desktop) (v0.6)
 
 ---
 
@@ -95,6 +101,5 @@ Alle Namen werden informell und mit ironischem Unterton verwendet.
 ---
 
 This is my first serious Bash-Repo. Enhancements, pull requests or feedback are always welcome.
-
 Dies ist mein erstes ernst gemeintes Bash-Repo. Verbesserungen, Pull Requests oder Feedback sind jederzeit willkommen.
 
