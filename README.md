@@ -2,17 +2,29 @@
 
 **English:**
 This repository contains Bash scripts to simplify the process of mounting and unmounting USB drives.
-Currently tailored to one specific device (Kingston Onyx), the scripts are modular and can easily be adapted to other devices.
+
+*Mountwitch:* Choose your device from the block device list and mount it in a simple way.
+
+*Mountman:* Currently tailored to one specific device (Kingston Onyx), the scripts are modular and can easily be adapted to other devices.
+
 Future features include automatic UUID detection and interactive device selection.
 
 **Deutsch:**
 Dieses Repository enthält Bash-Skripte, um das Mounten und Aushängen von USB-Sticks zu vereinfachen.
-Derzeit auf ein bestimmtes Gerät (Kingston Onyx) ausgelegt, sind die Skripte modular aufgebaut und lassen sich leicht an andere Geräte anpassen.
+
+*Mountwitch:* Listet Speichergeräte auf. Einfaches mounten durch Eingabe der UUID.
+
+*Mountman:* Derzeit auf ein bestimmtes Gerät (Kingston Onyx) ausgelegt, sind die Skripte modular aufgebaut und lassen sich leicht an andere Geräte anpassen.
 Geplante Erweiterungen beinhalten automatische UUID-Erkennung und interaktive Geräteauswahl.
 
 ---
 
 ## Scripts
+
+### Mountwitch
+
+**EN:** Lists block devices with UUID. Just enter the UUID after to mount the device.
+**DE:** Listet angeschlossene Speichermedien mit UUID auf. UUID muss zum mounten nur noch eingegeben werden.
 
 ### `mountman.sh` – Version 0.7
 
@@ -43,9 +55,8 @@ Geplante Erweiterungen beinhalten automatische UUID-Erkennung und interaktive Ge
 
 * Lazy unmount fallback
 * Detailed error handling
-* UUID-based unmounting for generic use
-* Prüfung ob das Gerät bereits gemountet wurde
-* Prüfung ob Mountverzeichnis bereits angelegt wurde
+* updating umountman to umountwitch
+
 
 ---
 
@@ -55,6 +66,7 @@ Geplante Erweiterungen beinhalten automatische UUID-Erkennung und interaktive Ge
 mountman/
 ├── LICENSE
 ├── mountman.sh
+├── mountwitch.sh
 ├── umountman.sh
 ├── README.md
 └── versions/
